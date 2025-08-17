@@ -53,7 +53,7 @@ def main():
 
             # Define an agent that uses the CodeInterpreterTool
             agent = agent_client.create_agent(
-                model=model_deployment,
+                model=model_deployment if model_deployment else "gpt-4o",
                 name="data-agent",
                 instructions="You are an AI agent that analyzes the data in the file that has been uploaded. Use Python to calculate statistical metrics as necessary.",
                 tools=code_interpreter.definitions,
