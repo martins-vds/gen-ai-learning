@@ -1,4 +1,6 @@
-azure-ai-projects
+azure-ai-projects[mcp]
 azure-identity
 openai
 python-dotenv
+uvicorn
+mcp
